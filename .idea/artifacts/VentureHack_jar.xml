@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="VentureHack:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/VentureHack_jar</output-path>
+    <root id="archive" name="VentureHack.jar">
+      <element id="module-output" name="VentureHack" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-io-2.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
