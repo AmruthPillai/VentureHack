@@ -1,18 +1,39 @@
 # VentureHack
 
 ## Description  
+
 Write a program to accept as input a string from the user, and outputs all legal words that can be formed from the word sorted in alphabetical order.  
 Use this as the list of 'legal' words: http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt  
 
 ## Rules  
+
 The input string should be letters only.  
-Also, the string length should be no less than 2 letters and no more than 7 letters.  
+Also, the string length should be no less than 2 letters and no more than 7 letters.
+
+## Example
+
+**Input:**  
+`cat`  
+**Output:**  
+`a`  
+`ac`  
+`act`  
+`at`  
+`ca`  
+`cat`  
+`ct`  
+
+## Judging Criteria
+
+You will be judged extensively on error handling, completeness, code readability and correctness. So you must validate user input.
+If the input string contains numbers, you should prompt the user for another input. Also, your code should be readable and well documented.
 
 ## Usage
 
 Just run the JAR package in the GitHub Releases section.  
+You can find the releases here: https://github.com/AmruthPillai/VentureHack/releases/tag/v1.0
 
-*Further information will be posted once project is complete.*  
+To run the jar file, fire up the commmand prompt or terminal, navigate to the downloaded JAR folder and enter the command: `java -jar VentureHack-v1.0.jar`
 
 ## Contributing
 
@@ -22,15 +43,11 @@ Just run the JAR package in the GitHub Releases section.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request!
 
-## History
-
-TODO: Write history
-
 ## Credits
 
-1. Amruth Pillai (@AmruthPillai)
-2. IntelliJ IDEA Community Edition
-3. StackOverflow
+1. IntelliJ IDEA Community Edition
+2. StackOverflow
+3. Java & Apache Commons Documentation
 
 ## License
 
