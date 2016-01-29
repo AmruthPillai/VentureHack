@@ -6,8 +6,6 @@
 
 package com.amruthpillai.venturehack;
 
-// Apache Commons IO Library to handle File IO gracefully
-
 import org.apache.commons.io.Charsets;
 import org.apache.commons.io.FileUtils;
 
@@ -17,8 +15,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
-// Basic Java Libraries
 
 public class VentureHack {
 
