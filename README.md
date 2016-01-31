@@ -31,7 +31,7 @@ If the input string contains numbers, you should prompt the user for another inp
 ## Usage
 
 Just run the JAR package in the GitHub Releases section.  
-You can find the releases here: https://github.com/AmruthPillai/VentureHack/releases/tag/v1.0
+You can find the releases here: https://github.com/AmruthPillai/VentureHack/releases/tag/v1.2  
 
 To run the jar file, fire up the commmand prompt or terminal, navigate to the downloaded JAR folder and enter the command: `java -jar VentureHack-v1.0.jar`
 
