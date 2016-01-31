@@ -6,10 +6,8 @@
 
 package com.amruthpillai.venturehack;
 
-import org.apache.commons.io.Charsets;
-import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -45,7 +43,7 @@ public class VentureHack {
 
         // Using Try-Catch Block to make sure the Dictionary was found in the package
         try {
-            legalWords = FileUtils.readLines(new File("LegalWords.txt"), Charsets.UTF_8);
+            legalWords = IOUtils.readLines(VentureHack.class.getClassLoader().getResourceAsStream("LegalWords.txt"));
         } catch (IOException e) {
             System.out.println("The Legal Words Dictionary was not found, please re-download package!");
         }
@@ -81,7 +79,8 @@ public class VentureHack {
 
             // Check if the new output string is in the Dictionary of Legal Words
             if (legalWords.contains(outputString.toString()))
-                resultWords.add(outputString.toString());
+                if (!(resultWords.contains(outputString.toString()))) // To ensure duplicate entries do not enter the List
+                    resultWords.add(outputString.toString());
 
             // Use Recursion to iterate through all possible combinations
             used[i] = true;
